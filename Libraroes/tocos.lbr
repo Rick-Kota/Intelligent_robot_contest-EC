@@ -136,7 +136,6 @@
 <package name="QFN32">
 <circle x="-8" y="8" radius="0.3" width="0.6096" layer="21"/>
 <text x="-5" y="9" size="1.778" layer="25">&gt;NAME</text>
-<text x="-5" y="-11" size="1.778" layer="27">&gt;VALUE</text>
 <smd name="9" x="-4.445" y="-6.735" dx="0.9" dy="1.4" layer="1" roundness="100"/>
 <smd name="1" x="-6.735" y="4.445" dx="0.9" dy="1.4" layer="1" roundness="100" rot="R90"/>
 <smd name="2" x="-6.735" y="3.175" dx="0.9" dy="1.4" layer="1" roundness="100" rot="R90"/>
