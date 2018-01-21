@@ -6690,6 +6690,15 @@ In this library the device names are the same as the pin names of the symbols, t
 <wire x1="0.02" y1="1" x2="0.02" y2="0" width="0.127" layer="21"/>
 <text x="2.34" y="-0.99" size="0.4064" layer="21" rot="R90">&gt;NAME</text>
 </package>
+<package name="MCR03">
+<smd name="P$1" x="0" y="0" dx="0.5" dy="0.8" layer="1"/>
+<smd name="P$2" x="1.5" y="0" dx="0.5" dy="0.8" layer="1"/>
+<wire x1="-0.1" y1="0.5" x2="1.6" y2="0.5" width="0.127" layer="21"/>
+<wire x1="1.6" y1="0.5" x2="1.6" y2="-0.5" width="0.127" layer="21"/>
+<wire x1="1.6" y1="-0.5" x2="-0.1" y2="-0.5" width="0.127" layer="21"/>
+<wire x1="-0.1" y1="-0.5" x2="-0.1" y2="0.5" width="0.127" layer="21"/>
+<text x="-2.5" y="-2" size="1.27" layer="21">&gt;NAME</text>
+</package>
 <package name="MCR006">
 <smd name="P$1" x="0" y="0" dx="0.27" dy="0.3" layer="1" rot="R180"/>
 <smd name="P$2" x="0.57" y="0" dx="0.27" dy="0.3" layer="1" rot="R180"/>
@@ -6719,6 +6728,22 @@ In this library the device names are the same as the pin names of the symbols, t
 </gates>
 <devices>
 <device name="" package="LTR10">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+<connect gate="G$1" pin="2" pad="P$2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MCR03" prefix="R">
+<gates>
+<gate name="G$1" symbol="R" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="MCR03">
 <connects>
 <connect gate="G$1" pin="1" pad="P$1"/>
 <connect gate="G$1" pin="2" pad="P$2"/>
@@ -7709,7 +7734,7 @@ W = angled&lt;p&gt;
 <part name="+7.5V" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="VCC" device="" value="+7.5V"/>
 <part name="C9" library="Murata" deviceset="GMR31" device=""/>
 <part name="DC13" library="TDK" deviceset="YFF21PC" device=""/>
-<part name="R10" library="ROHM" deviceset="MCR006" device=""/>
+<part name="R10" library="ROHM" deviceset="MCR03" device=""/>
 <part name="C10" library="Murata" deviceset="GMR31" device=""/>
 <part name="GND8" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="0R1" library="Keystone" deviceset="5106" device=""/>
